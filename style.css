@@ -81,15 +81,9 @@ a {
   margin-bottom: 10px;
 }
 
-.p-about-text-1,
-.p-about-text-2,
-.p-about-text-3 {
-  font-size: 19px;
-  line-height: 32px;
-}
-
-.p-about-text-3 {
-  margin-bottom: 64px;
+.p-about-text {
+  margin-bottom: 30px;
+  line-height: 35px;
 }
 
 .p-project-name {
