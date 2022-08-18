@@ -1,131 +1,138 @@
 body {
-    background-color: #e7eef2;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 100%;
-  }
-  
-  a {
-    font-size: 16px;
-  }
-  
-  .div-top,
-  .div-bottom {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .div-hello,
-  .div-about,
-  .div-projects {
-    background-color: #ffffff;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin: 20px 10% 20px 10%;
-    border-radius: 7px;
-    box-shadow: 0px 1px 5px #a8b6bd;
-  }
-  
-  .div-hello {
-    padding-left: 20px;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    column-gap: 10px;
-    text-align: left;
-  }
-  
-  .div-hello-text {
-    vertical-align: top;
-  }
-  
-  .div-projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 30px;
-  }
-  
-  .portrait {
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  
-  .thumbnail {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: -5px;
-  }
-  
-  .p-hello {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .p-who {
-    font-size: 20px;
-  }
-  
-  .p-about-title,
-  .p-projects-title {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .p-about-text {
-    margin-bottom: 30px;
-    line-height: 35px;
-  }
-  
-  .p-project-name {
-    font-size: 23px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .p-project-text {
-    width: 100%;
-    margin-left: 10px;
-    margin-bottom: 27px;
-    line-height: 27px;
-  }
-  
-  .github-link,
-  .project-link {
-    background-color: #ffffff;
-    border-color: #364557;
-    color: #364557;
-    border-style: solid;
-    border-width: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
-  }
-  
-  .project-link {
-    margin-left: 10px;
-  }
-  
-  .github-link:hover,
-  .project-link:hover {
-    background-color: #364557;
-    color: #ffffff;
-  }
-  
-  .github-link:active,
-  .project-link:active {
-    opacity: 0.7;
-  }
+  background-color: #e7eef2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+a {
+  font-size: 16px;
+}
+
+.div-top,
+.div-bottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div-hello,
+.div-about,
+.div-projects {
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin: 20px 10% 20px 10%;
+  border-radius: 7px;
+  box-shadow: 0px 1px 5px #a8b6bd;
+}
+
+.div-hello {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 10px;
+  text-align: left;
+}
+
+.div-hello-text {
+  vertical-align: top;
+}
+
+.div-projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+
+.portrait {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 5px;
+  margin-left: -5px;
+}
+
+.p-hello {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.p-who {
+  font-size: 20px;
+}
+
+.p-about-title,
+.p-projects-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.p-about-text-1,
+.p-about-text-2,
+.p-about-text-3 {
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.p-about-text-3 {
+  margin-bottom: 32px;
+}
+
+.p-project-name {
+  font-size: 23px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.p-project-text {
+  width: 100%;
+  margin-left: 10px;
+  margin-bottom: 27px;
+  line-height: 27px;
+}
+
+.github-link,
+.project-link {
+  background-color: #ffffff;
+  border-color: #364557;
+  color: #364557;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.project-link {
+  margin-left: 10px;
+}
+
+.github-link:hover,
+.project-link:hover {
+  background-color: #364557;
+  color: #ffffff;
+}
+
+.github-link:active,
+.project-link:active {
+  opacity: 0.7;
+}
