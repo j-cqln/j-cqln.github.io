@@ -4,14 +4,14 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 0px;
   margin-bottom: 0px;
   width: 100%;
 }
 
 a {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .div-top,
@@ -20,8 +20,37 @@ a {
   margin-bottom: 10px;
 }
 
-.div-hello,
-.div-about,
+.div-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 30px;
+  margin: 20px 10% 20px 10%;
+  min-width: 520px;
+}
+
+.div-hello {
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 5px #a8b6bd;
+  min-width: 290px;
+}
+
+.div-about {
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 5px #a8b6bd;
+  min-width: 290px;
+}
+
 .div-projects {
   background-color: #ffffff;
   padding-left: 30px;
@@ -31,6 +60,7 @@ a {
   margin: 20px 10% 20px 10%;
   border-radius: 7px;
   box-shadow: 0px 1px 5px #a8b6bd;
+  min-width: 640px;
 }
 
 .div-hello {
@@ -47,7 +77,7 @@ a {
 
 .div-projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 30px;
 }
@@ -67,28 +97,28 @@ a {
 }
 
 .p-hello {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .p-who {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .p-about-title,
 .p-projects-title {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .p-about-text {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 16px;
+  margin-bottom: 25px;
   line-height: 35px;
 }
 
 .p-project-name {
-  font-size: 23px;
+  font-size: 18px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
@@ -96,8 +126,8 @@ a {
 .p-project-text {
   width: 100%;
   margin-left: 10px;
-  margin-bottom: 27px;
-  line-height: 27px;
+  margin-bottom: 25px;
+  line-height: 20px;
 }
 
 .github-link,
