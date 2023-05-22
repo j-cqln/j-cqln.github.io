@@ -79,7 +79,7 @@ a {
 .div-hello {
   display: grid;
   grid-template-columns: 40% 1fr;
-  column-gap: 10px;
+  column-gap: 20px;
   text-align: left;
   margin-left: -10px;
   border-right: 1px solid #2d8dc9;
