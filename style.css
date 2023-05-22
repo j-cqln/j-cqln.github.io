@@ -78,7 +78,7 @@ a {
 
 .div-hello {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 40% 1fr;
   column-gap: 10px;
   text-align: left;
   margin-left: -10px;
