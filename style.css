@@ -62,7 +62,7 @@ a {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   margin: 20px 10% 20px 10%;
   border-radius: 7px;
   box-shadow: 0px 1px 5px #a8b6bd;
@@ -87,7 +87,7 @@ a {
 
 .div-hello-text {
   vertical-align: top;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .div-about {
@@ -153,7 +153,6 @@ a {
 
 .p-about-text {
   font-size: 16px;
-  margin-bottom: 25px;
   line-height: 27px;
 }
 
@@ -171,34 +170,44 @@ a {
   min-height: 45px;
 }
 
-.github-link,
+.inactive-link {
+  background-color: #f8f8f8;
+  border-color: #a3acb0;
+  color: #a3acb0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
 .project-link {
   background-color: #ffffff;
   border-color: #2d8dc9;
   color: #2d8dc9;
   border-style: solid;
   border-width: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
-}
-
-.project-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 10px;
 }
 
-.github-link:hover,
 .project-link:hover {
   background-color: #2d8dc9;
   color: #ffffff;
 }
 
-.github-link:active,
 .project-link:active {
   opacity: 0.7;
 }
