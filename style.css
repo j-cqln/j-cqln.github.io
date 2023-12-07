@@ -1,35 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --foreground: #2d8dc9;
+  --background: #c7eaff;
+  --bar: #3aabf1;
+  --shadow: #a8b6bd;
+  --inactive-foreground: #a3acb0;
+  --inactive-background: #f8f8f8;
+}
+
 body {
-  background-color: #c7eaff;
-  color: #2d8dc9;
+  background-color: var(--background);
+  color: var(--foreground);
   font-family: 'Open Sans', sans-serif;
 }
 
 .top-nav-bar {
-  margin: -8px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #3aabf1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: -8px;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bar);
+  box-shadow: 0px 1px 5px var(--shadow);
 }
 
 .top-nav-bar a {
-  color: #ffffff;
+  padding: 14px 16px;
+  color: var(--white);
   font-size: 14px;
   text-align: center;
   text-decoration: none;
-  padding: 14px 16px;
 }
 
 .top-nav-bar a:hover {
-  background-color: #2d8dc9;
+  background-color: var(--foreground);
 }
 
 .top-nav-bar a.active {
   opacity: 0.7;
+}
+
+.sticky {
+  position: fixed;
+  top: 8px;
+  width: 100%;
+}
+
+.sticky + .div-main-content {
+  padding-top: 89px;
 }
 
 p {
@@ -58,14 +83,11 @@ a {
 }
 
 .div-intro {
-  background-color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  background-color: var(--white);
+  padding: 30px 30px 35px 30px;
   margin: 20px 10% 20px 10%;
   border-radius: 7px;
-  box-shadow: 0px 1px 5px #a8b6bd;
+  box-shadow: 0px 1px 5px var(--shadow);
   min-width: 653px;
 }
 
@@ -82,7 +104,7 @@ a {
   column-gap: 20px;
   text-align: left;
   margin-left: -10px;
-  border-right: 1px solid #2d8dc9;
+  border-right: 1px solid var(--foreground);
 }
 
 .div-hello-text {
@@ -96,14 +118,11 @@ a {
 }
 
 .div-projects {
-  background-color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  background-color: var(--white);
+  padding: 30px 30px 40px 30px;
   margin: 20px 10% 20px 10%;
   border-radius: 7px;
-  box-shadow: 0px 1px 5px #a8b6bd;
+  box-shadow: 0px 1px 5px var(--shadow);
   min-width: 653px;
 }
 
@@ -130,7 +149,7 @@ a {
 
 .p-top-nav-bar {
   margin: 20px 0px 10px 0px;
-  color: #ffffff;
+  color: var(--white);
   font-family: 'Bodoni Moda', serif;
   font-size: 24px;
   text-align: center;
@@ -171,41 +190,31 @@ a {
 }
 
 .inactive-link {
-  background-color: #f8f8f8;
-  border-color: #a3acb0;
-  color: #a3acb0;
-  border-style: solid;
-  border-width: 1px;
+  background-color: var(--inactive-background);
+  color: var(--inactive-foreground);
+  border: 1px solid var(--inactive-foreground);
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px 10px 10px;
   margin-left: 10px;
 }
 
 .project-link {
-  background-color: #ffffff;
-  border-color: #2d8dc9;
-  color: #2d8dc9;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 4px;
+  background-color: var(--white);
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
+  border-radius: 6px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 10px 10px 10px;
   margin-left: 10px;
 }
 
 .project-link:hover {
-  background-color: #2d8dc9;
-  color: #ffffff;
+  background-color: var(--foreground);
+  color: var(--white);
 }
 
 .project-link:active {
@@ -237,7 +246,7 @@ a {
 
   .div-hello {
     border-right: none;
-    border-bottom: 1px solid #2d8dc9;
+    border-bottom: 1px solid var(--foreground);
     padding: 0px 0px 2em 0px;
   }
 
@@ -252,7 +261,7 @@ a {
   }
 
   .div-project {
-    border-bottom: 1px solid #2d8dc9;
+    border-bottom: 1px solid var(--foreground);
     padding: 0px 1em 3em 1em;
   }
 }
