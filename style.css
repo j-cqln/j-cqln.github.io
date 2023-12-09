@@ -261,7 +261,10 @@ a {
   }
 
   .div-project {
-    border-bottom: 1px solid var(--foreground);
     padding: 0px 1em 3em 1em;
+  }
+
+  .div-project + .div-project {
+    border-top: 1px solid var(--foreground);
   }
 }
