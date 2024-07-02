@@ -133,6 +133,10 @@ a {
   row-gap: 30px;
 }
 
+.div-project {
+  padding: 5px 0px 5px 0px;
+}
+
 .portrait {
   max-width: 100%;
   max-height: 100%;
@@ -261,10 +265,11 @@ a {
   }
 
   .div-project {
-    padding: 0px 1em 3em 1em;
+    padding: 0px 1em 2em 1em;
   }
 
   .div-project + .div-project {
     border-top: 1px solid var(--foreground);
+    padding-top: 20px;
   }
 }
